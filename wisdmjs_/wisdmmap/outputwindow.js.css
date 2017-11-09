@@ -1,0 +1,11 @@
+.outputwindow {
+}
+
+.outputwindow_content {
+	font-size:11px;
+	position:absolute;
+	left:8px;
+	top:8px;
+	bottom:8px;
+	right:8px;
+}

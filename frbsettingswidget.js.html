@@ -1,0 +1,60 @@
+<div id=frbsettingswidget class=wisdm>
+	<a href="javascript:;" id=toggle_hide>Hide Settings Panel</a>
+	<span id=frbsettingswidget_content>
+	<table>
+		<tr><td><b>Overlay</b></td></tr>
+		<tr id=display_row><td>Display:</td><td><select id=display_select></select></td></tr>
+		<tr id=threshold_row><td>Threshold by:</td><td><select id=threshold_select></select></td></tr>
+		<tr><td>Threshold:</td><td><input type=text id=overlay_threshold class=input1 /></td></tr>
+		<tr><td>Minimum:</td><td><input type=text id=overlay_minimum class=input1 /></td></tr>
+		<tr><td>Maximum:</td><td><input type=text id=overlay_maximum class=input1 /></td></tr>
+		<tr><td><input type=checkbox id=overlay_negative /> Negative</td><td></td></tr>
+		<tr><td><button id=update_overlay>Update</button></td><td></td></tr>
+	</table>
+	<br/>
+	<table>
+		<tr><td><b>Orientation</b></td></tr>
+		<tr><td>
+			<select id=plane>
+				<option value="XY">Axial</option>
+				<option value="YZ">Sagittal</option>
+				<option value="XZ">Coronal</option>
+			</select>
+		</td></tr>
+	</table>
+	<br/>
+	<table>
+		<tr><td><b>Layout</b></td></tr>
+		<tr>
+		<td>
+			<select id=layout>
+				<option value="3-plane">3 Planes</option>
+				<option value="mosaic_1x1">Mosaic 1x1</option>
+				<option value="mosaic_3x3">Mosaic 3x3</option>
+				<option value="mosaic_4x4">Mosaic 4x4</option>
+				<option value="mosaic_1x5">Mosaic 1x5</option>
+				<option value="mosaic_2x5">Mosaic 2x5</option>
+				<option value="mosaic_2x8">Mosaic 2x8</option>
+			</select>
+		</td>
+		<td>
+			<select id=size_mode>
+				<option value="small">Small</option>
+				<option value="medium">Medium</option>
+				<option value="large">Large</option>
+				<option value="very_large">Very Large</option>
+			</select>
+		</td>
+		</tr>
+	</table>
+	<br/>
+	<div id=colorbar style="position:relative"></div>
+	<table>
+		<tr><td><b>Template</b></td></tr>
+		<tr><td>Minimum:</td><td><input type=text id=template_minimum class=input1 /></td></tr>
+		<tr><td>Maximum:</td><td><input type=text id=template_maximum class=input1 /></td></tr>
+		<tr><td><button id=update_template>Update</button></td></tr>
+	</table>
+	</span>
+</div>
+

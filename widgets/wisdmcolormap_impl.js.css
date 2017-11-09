@@ -1,0 +1,16 @@
+.wisdm-colorbar{
+}
+.wisdm-colorbar-max,
+.wisdm-colorbar-min{
+	position: absolute;
+	font-size: 0.8em;
+	text-align:center;
+	overflow:visible;
+}
+.wisdm-colorbar-base{
+	position: relative;
+	margin: 20px 25px;
+	overflow:hidden;
+	cursor: crosshair;
+	border: 1px solid black;
+}

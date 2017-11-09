@@ -1,0 +1,219 @@
+.wisdmbanner{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	height:35px;
+	z-index:500 !important;
+	font-family:Arial,Helvetica,Sans-serif;
+}
+.admin_page {
+	display:none;
+}
+.wisdmbanner_footer, .wisdmbanner_status{
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:16px;
+	font-family:Arial,Helvetica,Sans-serif;
+	font-size:12px;
+	color:rgb(200,200,220);
+}
+.wisdmbanner_footer {
+	right:0;
+	z-index:600;
+}
+.wisdmbanner_status {
+	z-index:500;
+	text-align:justify;
+	direction:rtl;
+	right:15px;
+	background-color: black; /*IE7< fallback*/
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAIAAAAPE8H1AAAALUlEQVQI1wXBgQ0AMAjDMA0huIH/z4Q2s9/M7C6Qd1dVQEqKCCC62zaQtiUBH/gYIUCimpFfAAAAAElFTkSuQmCC);
+}
+.wisdmbanner,
+.wisdmbanner .submenu{
+	background-repeat: repeat;
+	background-color: black; /*IE7< fallback*/
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAIAAAAPE8H1AAAALUlEQVQI1wXBgQ0AMAjDMA0huIH/z4Q2s9/M7C6Qd1dVQEqKCCC62zaQtiUBH/gYIUCimpFfAAAAAElFTkSuQmCC);
+	white-space:nowrap;
+}
+.wisdmbanner .submenu li{
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:15px;
+}
+/* Sub Menu*/
+.wisdmbanner .submenu{
+	position: absolute;
+	top: 28px;
+	right: 75px;
+	min-width: 100px;
+	border: 0px solid black;
+	border-top: 0;
+}
+.wisdmbanner .submenu .sign{
+	position:absolute;
+	bottom: -5px;
+	left: 45%;
+	height:10px;
+	width:30px;
+	color:#A9A9A9;
+	background-color:#282828;
+	font-size:12px;
+	text-align:center;
+	line-height:9px;
+	border:1px solid gray;
+	cursor:pointer;
+	z-index:501;
+}
+/* Outliner*/
+#menuoutliner{
+	position:absolute;
+	cursor:pointer;
+	top:0px; /*added by jfm 4-12-2013*/
+	width:86px;
+	border-top:3px solid;
+	border-color: rgb(7, 179, 225);
+	height:32px;
+	-moz-box-shadow: inset 0 0 4px #969696;
+	-webkit-box-shadow:inset 0 0 4px #969696;
+	box-shadow:inset 0 0 4px #969696;
+}
+ /*Main Layout*/
+#menuleft{
+	position:absolute;
+	top:20%;
+	height:100%;
+}
+#menuright{
+	position:absolute;
+	top:20%;
+	right:20px;
+	height:100%;
+}
+
+/* Link style */
+.wisdmbanner a.outlined{
+	text-align: center;
+	vertical-align: top;
+	margin: 0 15px;
+	white-space: nowrap;
+}
+.wisdmbanner a#home{
+	font-size: 0.8em;
+	font-family: "Rammetto One", Arial, Helvetica; 
+	text-transform: uppercase;	
+}
+.wisdmbanner a#user{
+	position: absolute;
+	right: 80px;
+}
+.wisdmbanner a,
+.wisdmbanner a:visited{
+	cursor: pointer;
+	color:white;
+	
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	-ms-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;		
+}
+.wisdmbanner a:hover,
+.wisdmbanner a:active{
+	color:rgb(7, 179, 225);
+}
+
+.wisdmbanner a:active{
+	-webkit-transition: all 0s;
+	-moz-transition: all 0s;
+	-o-transition: all 0s;
+	-ms-transition: all 0s;
+	transition: all 0s;		
+}
+/* For table like style in non-tabular data (submenu) */
+.wisdmbanner .table{
+	display: table;
+}
+.wisdmbanner .row{
+	display: table-row;
+}
+.wisdmbanner .cell{
+	display: table-cell;
+}
+/* For list style */
+.wisdmbanner ul{
+	list-style-type:none;
+	margin: 5px;
+	padding:0;
+	padding-left: 25px;
+}
+.wisdmbanner ul:last-child{
+	margin-bottom: 10px;
+}
+/* submenu icons */
+/*.submenu button:before,
+.submenu a:before{
+	position: absolute;
+	content: "";
+	left: 5px;
+	width: 16px;
+	height: 16px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-image: url("http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/themes/smoothness/images/ui-icons_222222_256x240.png"); /*Hmmm maybe this should be rethought*/
+	background-color: white;
+}*/
+.submenu a#wisdmbanner_profile:before{
+	background-position: 0 -112px;
+}
+.submenu a#wisdmbanner_logout:before{
+	background-position: -240px -48px;
+}
+.submenu a#wisdmbanner_loginas:before{
+	background-position: -208px -48px;
+}
+.submenu a#wisdmbanner_forgotpw_lbl:before{
+	background-position: -48px -144px;
+}
+.submenu a#wisdmbanner_createaccount_lbl:before{
+	background-position: -16px -128px;
+}
+.submenu button#wisdmbanner_loginbutton{
+	position: relative;
+	cursor: pointer;
+	/*bottom: 30px;
+	right: 13px;
+	padding: 3px 3px 3px 25px;*/
+	font-size: 14px;
+}
+/*
+.submenu button#wisdmbanner_loginbutton:before{
+	background-position: -112px -128px;
+	border: 1px solid black;
+	top: 2px;
+}
+*/
+.submenu input{
+	width: 200px;
+	font-size: 14px;
+	margin: 3px 0;
+}
+.submenu input.emptyfield{
+	color: #A8A8A8;
+}
+.submenu a.tologin{
+	display: block;
+	margin-top: 5px;
+}
+.submenu .small{
+	font-size: 0.8em;
+}
+/* initially we hide all submenu*/
+.submenu .loggedin,
+.submenu .tologin{
+	display: none;
+}

@@ -1,0 +1,17 @@
+#views {
+	position:absolute;
+	overflow:auto;
+}
+#settings {
+	position:absolute;
+	overflow:auto;
+}
+.maximize_button {
+	background-image:url('../../resources/images/yusukekamiyamane/arrow-out.png');
+}
+.restore_button {
+	background-image:url('../../resources/images/yusukekamiyamane/arrow-in.png');
+}
+.close_button {
+	background-image:url('../../resources/images/yusukekamiyamane/cross-button.png');
+}

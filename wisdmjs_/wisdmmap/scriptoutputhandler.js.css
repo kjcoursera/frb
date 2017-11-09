@@ -1,0 +1,7 @@
+.script_output {
+	font-family:monospace;
+}
+.script_output p {
+	margin:0;
+  line-height:1.3;
+}

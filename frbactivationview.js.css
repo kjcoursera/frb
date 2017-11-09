@@ -1,0 +1,38 @@
+.fmriactivationview-box {
+	border:5px solid #027392;
+	background-color:rgb(30,30,30);
+	color:white;
+}
+.fmriactivationview-info {
+	font-family:Arial;
+	font-size:10px;
+}
+.fmriactivationview-title {
+	font-family:Arial;
+	font-size:11px;
+}
+.fmriactivationview-copy-button {
+	background-image:url('../../resources/images/yusukekamiyamane/drive-download.png');
+}
+.fmriactivationview-title-buttons .fmriactivationview-button {
+	position:relative;
+	float:right;
+	cursor:pointer;
+	width:14px;
+	height:14px;
+	repeat:none;
+	margin-left:5px;
+	background-size:100%;
+}
+.fmriactivationview-title-buttons .fmriactivationview-button:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
+  opacity: 0.4;
+}
+.loading_message {
+	color:rgb(200,200,230);
+	font-weight:bold;
+}
+

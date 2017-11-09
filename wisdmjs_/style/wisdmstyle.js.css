@@ -1,0 +1,634 @@
+.ui-autocomplete.ui-menu{
+	font-size: 12px;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+/* HEADERS */
+.wisdm h1,
+.wisdm h2,
+.wisdm h3,
+	
+h1.wisdm,
+h2.wisdm,
+h3.wisdm,
+	
+.wisdm-h1,
+.wisdm-h2,
+.wisdm-h3{
+	font-family: 'Rammetto One',logo,revolution,Arial,Helvetica;
+	padding-left: 0px;
+}
+.wisdm h1,
+h1.wisdm
+.wisdm-h1{
+	color: #004D5C;
+}
+.wisdm h2,
+h2.wisdm,
+.wisdm-h2{
+	color: #07B1E1;
+}
+.wisdm h3,
+h3.wisdm,
+.wisdm-h3{
+	color: #027392;
+}
+/* Links */
+.wisdm a,
+a.wisdm{
+	color:#101010;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	-ms-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;		
+}
+.wisdm a:visited,
+a.wisdm:visited{
+	color:#027392;
+}
+.wisdm a:hover,
+a.wisdm:hover{
+	color:#915830;
+}
+.wisdm a:active,
+a.wisdm:active{
+	color:#07B1E1;
+	-webkit-transition: all 0s;
+	-moz-transition: all 0s;
+	-o-transition: all 0s;
+	-ms-transition: all 0s;
+	transition: all 0s;		
+}
+/* Content Box wrapper*/
+.wisdm .box,
+.wisdm-box{
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	position: relative;
+	border: 5px solid #027392;
+	border-radius: 6px;	
+	-moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	margin: 20px;
+	vertical-align: middle;
+	padding: 15px;
+	background-color: white;
+}
+.wisdm .box:before,
+.wisdm-box:before{
+	position: absolute;
+	top: -20px;
+	left: 25px;
+	background-color: white;
+	padding: 5px;
+	padding-bottom: 0;
+	font-weight: bold;
+	font-family: 'Rammetto One',logo,revolution,Arial,Helvetica;
+	color: #07B1E1;
+	content:  attr(id);
+}
+
+/* Default Wisdm Button*/
+.wisdm button,
+button.wisdm{
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	border: 1px solid #666;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+	background-color: #eee;
+	color: black;
+	-webkit-transition: all 0.4s ease-in;
+	-moz-transition: all 0.4s ease-in;
+	-o-transition: all 0.4s ease-in;
+	-ms-transition: all 0.4s ease-in;
+	transition: all 0.4s ease-in;
+	min-width:25px;
+	min-height: 27px;
+	padding: 5px;
+	margin: 4px 4px 0 0;
+	vertical-align: top;
+}
+.wisdm button:hover,
+button.wisdm:hover
+{
+	cursor: pointer;
+	background-color: #70D4F0;
+	color: black;
+}
+.wisdm button:active,
+button.wisdm:active{
+	background-color: #07B1E1;
+}
+				
+.wisdm button.disabled,
+.wisdm button.disabled:hover,
+button.wisdm.disabled,
+button.wisdm.disabled:hover{
+	color: rgb(220,220,220);
+	border: 1px solid gray;
+}
+				
+.wisdm button.disabled:active,
+button.wisdm.disabled:active{
+	background-color: #eee;
+	color: rgb(220,220,220);
+}
+
+.wisdm button.disabled:hover,
+button.wisdm.disabled:hover{
+	cursor: default;
+	background-color: #eee;
+	color: rgb(220,220,220);
+}
+.wisdm button:active,
+button.wisdm:active{
+	background-color: #07B3E1;
+	color: white;
+	-webkit-transition: all 0s;
+	-moz-transition: all 0s;
+	-o-transition: all 0s;
+	-ms-transition: all 0s;
+	transition: all 0s;
+}
+						 
+.wisdm-button-icon {
+	position:relative;
+	float:left;
+	background-image: url('../../../../resources/images/icons/sprite2.png');
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+}
+.wisdm-button-label {
+	position:relative;
+	float:left;
+	padding-left:4px;
+}
+
+
+/* 
+ * All icons used are from the Yusuke Amiyamane's Fugue Icon Set available here: http://p.yusukekamiyamane.com/
+ *
+ * Notes:
+ *  - This sprite only contains a subset of them, the ones that have been used the most on the pages
+ *  - Names have been mantained from the original iconset with a few exceptions (this is not an exhaustive list of changes)
+ *      - '-octagon-frame' has been removed
+ *      - crown has been changed to crown-gold (to match format with crown-silver)
+ *      - flag has been changed to flag-red (to match format with flag-green)
+ *      - and a few other names have been changed or clarified
+ */
+.wisdm-button-icon-application:before,
+.wisdm-icon-application 
+	{ width: 16px; height: 16px; background-position: -170px 0; }
+.wisdm-button-icon-arrow-045:before,
+.wisdm-icon-arrow-045 
+	{ width: 16px; height: 16px; background-position: -68px -102px; }
+.wisdm-button-icon-arrow-090:before,
+.wisdm-icon-arrow-090 
+	{ width: 16px; height: 16px; background-position: -170px -85px; }
+.wisdm-button-icon-arrow-135:before,
+.wisdm-icon-arrow-135 
+	{ width: 16px; height: 16px; background-position: -102px -85px; }
+.wisdm-button-icon-arrow-180:before,
+.wisdm-icon-arrow-180 
+	{ width: 16px; height: 16px; background-position: -187px -68px; }
+.wisdm-button-icon-arrow-225:before,
+.wisdm-icon-arrow-225 
+	{ width: 16px; height: 16px; background-position: -34px -119px; }
+.wisdm-button-icon-arrow-270:before,
+.wisdm-icon-arrow-270 
+	{ width: 16px; height: 16px; background-position: -119px -102px; }
+.wisdm-button-icon-arrow-315:before,
+.wisdm-icon-arrow-315 
+	{ width: 16px; height: 16px; background-position: -102px -51px; }
+.wisdm-button-icon-circle:before,
+.wisdm-icon-arrow-circle
+	{ width: 16px; height: 16px; background-position: -187px -17px; }
+.wisdm-button-icon-arrow-in-out:before,
+.wisdm-icon-arrow-in-out 
+	{ width: 16px; height: 16px; background-position: -17px -85px; }
+.wisdm-button-icon-arrow-in:before,
+.wisdm-icon-arrow-in 
+	{ width: 16px; height: 16px; background-position: -17px -51px; }
+.wisdm-button-icon-arrow-stop-180:before,
+.wisdm-icon-arrow-stop-180 
+	{ width: 16px; height: 16px; background-position: -51px -51px; }
+.wisdm-button-icon-arrow-stop:before,
+.wisdm-icon-arrow-stop 
+	{ width: 16px; height: 16px; background-position: -68px -17px; }
+.wisdm-button-icon-arrow-switch:before,
+.wisdm-icon-arrow-switch 
+	{ width: 16px; height: 16px; background-position: -153px -102px; }
+.wisdm-button-icon-arrow:before,
+.wisdm-icon-arrow 
+	{ width: 16px; height: 16px; background-position: -102px -68px; }
+.wisdm-button-icon-asterisk:before,
+.wisdm-icon-asterisk 
+	{ width: 16px; height: 16px; background-position: -136px 0; }
+.wisdm-button-icon-balloon:before,
+.wisdm-icon-balloon 
+	{ width: 16px; height: 16px; background-position: -68px -34px; }
+.wisdm-button-icon-bookmark--minus:before,
+.wisdm-icon-bookmark--minus 
+	{ width: 16px; height: 16px; background-position: -85px -102px; }
+.wisdm-button-icon-bookmark--plus:before,
+.wisdm-icon-bookmark--plus
+	{ width: 16px; height: 16px; background-position: -102px -119px; }
+.wisdm-button-icon-bookmark:before,
+.wisdm-icon-bookmark 
+	{ width: 16px; height: 16px; background-position: -119px -17px; }
+.wisdm-button-icon-brain--minus:before,
+.wisdm-icon-brain--minus 
+	{ width: 16px; height: 16px; background-position: -136px -51px; }
+.wisdm-button-icon-brain--pencil:before,
+.wisdm-icon-brain--pencil 
+	{ width: 16px; height: 16px; background-position: -85px -85px; }
+.wisdm-button-icon-brain--plus:before,
+.wisdm-icon-brain--plus 
+	{ width: 16px; height: 16px; background-position: -119px -85px; }
+.wisdm-button-icon-brain-empty:before,
+.wisdm-icon-brain-empty 
+	{ width: 16px; height: 16px; background-position: -119px -51px; }
+.wisdm-button-icon-brain:before,
+.wisdm-icon-brain 
+	{ width: 16px; height: 16px; background-position: -102px -34px; }
+.wisdm-button-icon-broom:before,
+.wisdm-icon-broom 
+	{ width: 16px; height: 16px; background-position: -51px -102px; }
+.wisdm-button-icon-bug:before,
+.wisdm-icon-bug 
+	{ width: 16px; height: 16px; background-position: -102px -17px; }
+.wisdm-button-icon-calendar:before,
+.wisdm-icon-calendar
+	{ width: 16px; height: 16px; background-position: -85px 0; }
+.wisdm-button-icon-chevron-expand:before,
+.wisdm-icon-chevron-expand 
+	{ width: 16px; height: 16px; background-position: 0 -68px; }
+.wisdm-button-icon-clipboard-empty:before,
+.wisdm-icon-clipboard-empty 
+	{ width: 16px; height: 16px; background-position: -17px 0; }
+.wisdm-button-icon-clipboard:before,
+.wisdm-icon-clipboard 
+	{ width: 16px; height: 16px; background-position: -102px 0; }
+.wisdm-button-icon-clock:before,
+.wisdm-icon-clock 
+	{ width: 16px; height: 16px; background-position: -68px 0; }
+.wisdm-button-icon-color:before,
+.wisdm-icon-color 
+	{ width: 16px; height: 16px; background-position: -119px -68px; }
+.wisdm-button-icon-cross:before,
+.wisdm-icon-cross
+	{ width: 16px; height: 16px; background-position: -68px -51px; }
+.wisdm-button-icon-crown-silver:before,
+.wisdm-icon-crown-silver 
+	{ width: 16px; height: 16px; background-position: -187px -34px; }
+.wisdm-button-icon-crown-gold:before,
+.wisdm-icon-crown-gold 
+	{ width: 16px; height: 16px; background-position: -119px -34px; }
+.wisdm-button-icon-database:before,
+.wisdm-icon-database 
+	{ width: 16px; height: 16px; background-position: -170px -34px; }
+.wisdm-button-icon-disk:before,
+.wisdm-icon-disk 
+	{ width: 16px; height: 16px; background-position: 0 -51px; }
+.wisdm-button-icon-document--minus:before,
+.wisdm-icon-document--minus 
+	{ width: 16px; height: 16px; background-position: -34px -17px; }
+.wisdm-button-icon-document--pencil:before,
+.wisdm-icon-document--pencil 
+	{ width: 16px; height: 16px; background-position: -85px -17px; }
+.wisdm-button-icon-document--plus:before,
+.wisdm-icon-document--plus 
+	{ width: 16px; height: 16px; background-position: -68px -68px; }
+.wisdm-button-icon-document-code:before,
+.wisdm-icon-document-code 
+	{ width: 16px; height: 16px; background-position: -34px -34px; }
+.wisdm-button-icon-document-convert:before,
+.wisdm-icon-document-convert 
+	{ width: 16px; height: 16px; background-position: -119px 0; }
+.wisdm-button-icon-document-copy:before,
+.wisdm-icon-document-copy 
+	{ width: 16px; height: 16px; background-position: -136px -119px; }
+.wisdm-button-icon-document-rename:before,
+.wisdm-icon-document-rename 
+	{ width: 16px; height: 16px; background-position: -119px -119px; }
+.wisdm-button-icon-document-search:before,
+.wisdm-icon-document-search 
+	{ width: 16px; height: 16px; background-position: -85px -51px; }
+.wisdm-button-icon-document:before,
+.wisdm-icon-document
+	{ width: 16px; height: 16px; background-position: 0 -34px; }
+.wisdm-button-icon-drive:before,
+.wisdm-icon-drive 
+	{ width: 16px; height: 16px; background-position: -68px -119px; }
+.wisdm-button-icon-exclamation:before,
+.wisdm-icon-exclamation
+	{ width: 16px; height: 16px; background-position: -136px -85px; }
+.wisdm-button-icon-eye:before,
+.wisdm-icon-eye 
+	{ width: 16px; height: 16px; background-position: -153px -119px; }
+.wisdm-button-icon-flag-green:before,
+.wisdm-icon-flag-green 
+	{ width: 16px; height: 16px; background-position: -51px -17px; }
+.wisdm-button-icon-flag-red:before,
+.wisdm-icon-flag-red
+	{ width: 16px; height: 16px; background-position: -51px 0; }
+.wisdm-button-icon-flask:before,
+.wisdm-icon-flask 
+	{ width: 16px; height: 16px; background-position: -170px -102px; }
+.wisdm-icon-folder--minus 
+	{ width: 16px; height: 16px; background-position: -136px -34px; }
+.wisdm-icon-folder--pencil 
+	{ width: 16px; height: 16px; background-position: -17px -68px; }
+.wisdm-icon-folder--plus 
+	{ width: 16px; height: 16px; background-position: -153px -68px; }
+.wisdm-icon-folder-horizontal-open
+	{ width: 16px; height: 16px; background-position: 0 -17px; }
+.wisdm-icon-folder-horizontal 
+	{ width: 16px; height: 16px; background-position: -34px 0; }
+.wisdm-icon-folder-open 
+	{ width: 16px; height: 16px; background-position: -136px -102px; }
+.wisdm-icon-folder-rename 
+	{ width: 16px; height: 16px; background-position: -34px -51px; }
+.wisdm-icon-folder-search 
+	{ width: 16px; height: 16px; background-position: -34px -68px; }
+.wisdm-icon-folder-stand 
+	{ width: 16px; height: 16px; background-position: -136px -68px; }
+.wisdm-icon-folder-zipper 
+	{ width: 16px; height: 16px; background-position: -153px -34px; }
+.wisdm-icon-folder 
+	{ width: 16px; height: 16px; background-position: -34px -85px; }
+.wisdm-button-icon-gear:before,
+.wisdm-icon-gear 
+	{ width: 16px; height: 16px; background-position: 0 -119px; }
+.wisdm-button-icon-hand:before,
+.wisdm-icon-hand 
+	{ width: 16px; height: 16px; background-position: -170px -51px; }
+.wisdm-button-icon-information:before,
+.wisdm-icon-information 
+	{ width: 16px; height: 16px; background-position: -51px -34px; }
+.wisdm-button-icon-key--minus:before,
+.wisdm-icon-key--minus 
+	{ width: 16px; height: 16px; background-position: -51px -68px; }
+.wisdm-button-icon-key--pencil:before,
+.wisdm-icon-key--pencil 
+	{ width: 16px; height: 16px; background-position: -153px -51px; }
+.wisdm-button-icon-key--plus:before,
+.wisdm-icon-key--plus 
+	{ width: 16px; height: 16px; background-position: -17px -102px; }
+.wisdm-button-icon-key:before,
+.wisdm-icon-key 
+	{ width: 16px; height: 16px; background-position: 0 -102px; }
+.wisdm-button-icon-luggage:before,
+.wisdm-icon-luggage 
+	{ width: 16px; height: 16px; background-position: -68px -85px; }
+.wisdm-button-icon-magnifier:before,
+.wisdm-icon-magnifier 
+	{ width: 16px; height: 16px; background-position: -17px -34px; }
+.wisdm-button-icon-minus:before,
+.wisdm-icon-minus
+	{ width: 16px; height: 16px; background-position: -153px 0; }
+.wisdm-button-icon-pin:before,
+.wisdm-icon-pin 
+	{ width: 16px; height: 16px; background-position: -153px -17px; }
+.wisdm-button-icon-plus:before,
+.wisdm-icon-plus
+	{ width: 16px; height: 16px; background-position: -85px -34px; }
+.wisdm-button-icon-processor:before,
+.wisdm-icon-processor
+	{ width: 16px; height: 16px; background-position: -153px -85px; }
+.wisdm-button-icon-question:before,
+.wisdm-icon-question
+	{ width: 16px; height: 16px; background-position: -187px -51px; }
+.wisdm-button-icon-scissors:before,
+.wisdm-icon-scissors 
+	{ width: 16px; height: 16px; background-position: -17px -119px; }
+.wisdm-button-icon-script-code:before,
+.wisdm-icon-script-code 
+	{ width: 16px; height: 16px; background-position: 0 -85px; }
+.wisdm-button-icon-script-text:before,
+.wisdm-icon-script-text 
+	{ width: 16px; height: 16px; background-position: -102px -102px; }
+.wisdm-button-icon-tick:before,
+.wisdm-icon-tick
+	{ width: 16px; height: 16px; background-position: -85px -119px; }
+.wisdm-button-icon-expand:before,
+.wisdm-icon-expand
+	{ width: 16px; height: 16px; background-position: -187px 0; }
+.wisdm-button-icon-collapse:before,
+.wisdm-icon-collapse
+	{ width: 16px; height: 16px; background-position: -85px -68px; }
+.wisdm-button-icon-user--minus:before,
+.wisdm-icon-user--minus 
+	{ width: 16px; height: 16px; background-position: -34px -102px; }
+.wisdm-button-icon-user--plus:before,
+.wisdm-icon-user--plus 
+	{ width: 16px; height: 16px; background-position: -51px -119px; }
+.wisdm-button-icon-user-female:before,
+.wisdm-icon-user-female 
+	{ width: 16px; height: 16px; background-position: -170px -17px; }
+.wisdm-button-icon-user-silhouette:before,
+.wisdm-icon-user-silhouette 
+	{ width: 16px; height: 16px; background-position: 0 0; }
+.wisdm-button-icon-user:before,
+.wisdm-icon-user 
+	{ width: 16px; height: 16px; background-position: -17px -17px; }
+.wisdm-button-icon-validation-invalid:before,
+.wisdm-icon-validation-invalid
+	{ width: 16px; height: 16px; background-position: -136px -17px; }
+.wisdm-button-icon-validation-valid:before,
+.wisdm-icon-validation-valid
+	{ width: 16px; height: 16px; background-position: -170px -68px; }
+.wisdm-button-icon-wallet:before,
+.wisdm-icon-wallet 
+	{ width: 16px; height: 16px; background-position: -51px -85px; }
+				
+/* Table (base and default style WisdmTurquoise) */
+.wisdm-table{
+	border-collapse:collapse;
+	background-color:#C9E9F3;
+}
+.wisdm-table thead th{
+	padding: 5px;
+	color:#fff;
+	border: 1px solid white;
+	background-color:#36AACE;
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-moz-border-radius:5px 5px 0px 0px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+.wisdm-table thead th:empty{
+	background:transparent;
+	border:none;
+}
+.wisdm-table tbody td{
+	background-color:#C9E9F3;
+	border: 1px solid #E1EDEF;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	color:#202020;
+	white-space: nowrap;
+}
+
+.wisdm-table-white tbody tr:hover td,
+.wisdm-table tbody tr:hover td{
+	background-color: rgb(151,221,237);
+}
+.wisdm-table-white tr,
+.wisdm-table tr{
+	white-space: nowrap;	
+}
+.wisdm-table-white thead th button.wisdm-table-header-sort,
+.wisdm-table thead th button.wisdm-table-header-sort{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	top: -3px;
+	right: 0px;
+	width: 20px;
+	height: 20px;
+}
+.wisdm-table-white thead th .wisdm-table-header-text,
+.wisdm-table thead th .wisdm-table-header-text{
+	position: relative;
+	padding-right: 20px;
+}
+.wisdm-table-parent.wisdm-table-item-expand.wisdm-table-parent span.wisdm-table-item-icon,
+.wisdm-table-parent.wisdm-table-item-collapse.wisdm-table-parent span.wisdm-table-item-icon,
+.wisdm-table-leaf span.wisdm-table-item-icon,
+.wisdm-table-parent.wisdm-table-item-expand span.wisdm-table-item-collapsible,
+.wisdm-table-parent.wisdm-table-item-collapse span.wisdm-table-item-collapsible{
+	width: 16px;
+	height: 16px;
+	background-color: transparent; /*We want to keep IE7/6 happy, don't we?*/
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/*When the item is a parent and is collapsed we show a closed folder*/
+.wisdm-table-parent.wisdm-table-item-expand.wisdm-table-parent span.wisdm-table-item-icon{
+	background-image: url('../../../../resources/images/yusukekamiyamane/folder-horizontal.png');
+}
+/* When we hover over the collapsed parent we change the icon to open, to indicate that a click will open it */
+.wisdm-table-parent.wisdm-table-item-expand.wisdm-table-parent:hover span.wisdm-table-item-icon{
+	background-image: url('../../../../resources/images/yusukekamiyamane/folder-horizontal-open.png');
+}
+/* When the item is a parent and is expanded we show an open folder */
+.wisdm-table-parent.wisdm-table-item-collapse.wisdm-table-parent span.wisdm-table-item-icon{
+	background-image: url('../../../../resources/images/yusukekamiyamane/folder-horizontal-open.png');
+}
+/* When we hover over the expanded parent we change the icon to close, to indicate that a click will close it */
+.wisdm-table-parent.wisdm-table-item-collapse.wisdm-table-parent:hover span.wisdm-table-item-icon{
+	background-image: url('../../../../resources/images/yusukekamiyamane/folder-horizontal.png');
+}
+/* Icon for a leaf item */
+.wisdm-table-leaf span.wisdm-table-item-icon{
+	background-image: url('../../../../resources/images/yusukekamiyamane/blue-document.png');
+}
+/* Expand icon */
+.wisdm-table-parent span.wisdm-table-item-collapsible{
+	cursor: pointer;
+}
+.wisdm-table-parent.wisdm-table-item-expand span.wisdm-table-item-collapsible{
+	background-image: url('../../../../resources/images/yusukekamiyamane/toggle-expand.png');
+}
+/* Collapse icon*/
+.wisdm-table-parent.wisdm-table-item-collapse span.wisdm-table-item-collapsible{
+	background-image: url('../../../../resources/images/yusukekamiyamane/toggle.png');
+}
+/* Border over text when we hover over tr's*/
+/*.wisdm-table-white tbody td span.wisdm-table-item-name,*/
+.wisdm-table tbody td span.wisdm-table-item-name{
+	border: 1px dotted #C9E9F3;
+	vertical-align: top;
+}
+/*.wisdm-table-white tbody tr:hover td span.wisdm-table-item-name,*/
+.wisdm-table tbody tr:hover td span.wisdm-table-item-name{
+	border-color: gray;
+}
+.wisdm-table-white tbody tr.wisdm-table-item-selected:hover td{
+	background-color: #61C0DE;
+}
+/*.wisdm-table-white tbody tr.wisdm-table-item-selected span.wisdm-table-item-name,*/
+.wisdm-table tbody tr.wisdm-table-item-selected span.wisdm-table-item-name{
+	background-color: #69BFDB;
+	border-color: white;
+}
+.wisdm-table-white tbody tr.wisdm-table-item-selected,
+.wisdm-table tbody tr.wisdm-table-item-selected{
+	background-color:#36AACE;
+	color:#C9E9F3;
+}
+/* Table white (style 2: APA White)*/
+.wisdm-table-white{
+	border-collapse:collapse;
+	background-color: transparent;
+	margin-left: 5px;
+}
+/*.wisdm-table-white tbody td span.wisdm-table-item-name{
+	border: 1px dotted transparent;
+}*/
+.wisdm-table-white thead{
+	text-align: left;
+}
+.wisdm-table-white tbody td{
+	background-color: transparent;
+	
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	color:#202020;
+	white-space: nowrap;
+}
+.wisdm-table-white thead th{
+	background-color: transparent;
+	border-bottom: 1px solid gray;
+	color: black;
+	padding: 5px;
+}
+
+/* Table labels*/
+.wisdm-table-label{
+	margin: 0;
+	margin-right: 2px;
+	padding: 1px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 0.8em;
+	background-color: #eee;
+	color: #2648ac;
+	border: 1px solid #2648ac;
+}
+/*Selection*/
+.wisdm-select{
+	position: relative;
+	top: 4px;
+	min-width: 30px;
+	padding: 4px;
+	border: 1px solid #666;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+  -webkit-border-radius: 3px;	
+	background-color: #eee;
+	color: black;
+
+	-webkit-transition: all 0.4s ease-in;
+	-moz-transition: all 0.4s ease-in;
+	-o-transition: all 0.4s ease-in;
+	-ms-transition: all 0.4s ease-in;
+	transition: all 0.4s ease-in;
+}

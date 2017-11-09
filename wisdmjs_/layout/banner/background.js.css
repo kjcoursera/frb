@@ -1,0 +1,72 @@
+.wisdmbackground{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: -500;
+}
+.wisdm-light-style #wisdm_bg_big_W {
+	color:rgba(240,240,255,0.9);
+}
+.wisdm-light-style #wisdm_bg_left_logo {
+	color:rgba(230,230,255,0.9);
+}
+.wisdm-dark-style #wisdm_bg_big_W {
+	color:rgba(40,40,55,0.9);
+}
+.wisdm-dark-style #wisdm_bg_left_logo {
+	color:rgba(50,50,55,0.9);
+}
+#wisdm_bg_big_W{
+	position:absolute;
+	width:100%;
+	z-index:-2;
+	font-family: 'Rammetto One', logo,revolution,Arial,Helvetica;
+	top:0;
+	bottom: 0;
+	left:0;
+	font-size:58em;
+	line-height: 100%;
+	text-align:center;
+	text-overflow: clip;
+	overflow:hidden;
+}
+#wisdm_bg_left_logo{
+	position:absolute;
+	z-index:-1;
+	font-family: 'Rammetto One', logo,revolution,Arial,Helvetica;
+	bottom:0;
+	width:500px;
+	height:120px;
+	left:0}
+#wisdm_bg_left_def{display:none;position:absolute;bottom:55px;left:20px;width:480px}
+#wisdm_bg_left_motto{position:absolute;left:570px;bottom:55px;width:60px}
+#wisdm_bg_left_title{position:absolute;left:0;bottom:0;font-size:8em}
+.wisdmcontainer{position:absolute;z-index:0;top:35px;left:0;right:0;bottom:20px;overflow:hidden}
+.wisdmbanner{position:absolute;z-index:4;top:0;height:35px;left:0;right:0;background-color:black}
+/* Footer */
+.wisdmfooter{
+	position: absolute;
+	bottom: 0;
+	height: 19px;
+	border-top: 1px solid gray;
+	left: 0;
+	right: 0;
+	background-color: white;
+	z-index: 3;
+	text-align: center;
+	overflow: hidden;
+}
+.wisdmfooter_leftcorner{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+}
+.wisdmfooter_rightcorner{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
